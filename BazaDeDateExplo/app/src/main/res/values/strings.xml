@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">Baza de date Explo</string>
+
+    <string name="adauga">Adaugă</string>
+    <string name="adauga_modfica">Adaugă/Modifică</string>
+    <string name="sterge">Șterge</string>
+    <string name="cauta">Caută</string>
+    <string name="modifica">Modifică</string>
+    <string name="modifica_sterge">Modifică/Șterge</string>
+
+    <string name="nume">Nume</string>
+    <string name="prenume">Prenume</string>
+    <string name="data_nasterii">Data nașterii</string>
+    <string name="data_nasterii_format">zz/ll/aaaa</string>
+    <string name="CNP">CNP</string>
+    <string name="CNP_format">1234567891234</string>
+    <string name="nr_specializari">Număr Specializări</string>
+    <string name="nr_specializari_format">0</string>
+    <string name="grad">Grad</string>
+    <string name="grad_format">ucenic/etc sau ghid-asistent/etc</string>
+    <string name="instructor">Instructor</string>
+    <string name="instructor_format">0 sau 1</string>
+    <string name="sex">Sex</string>
+    <string name="sex_format">f sau m</string>
+    <string name="parinte">Părinte</string>
+    <string name="club">Club</string>
+    <string name="parinte_nume">Părinte Nume</string>
+    <string name="parinte_nume_format">Ionescu</string>
+    <string name="parinte_prenume">Părinte Prenume</string>
+    <string name="parinte_prenume_format">Ion</string>
+    <string name="data_format">zz/ll/aaaa</string>
+
+    <string name="gen">Gen</string>
+    <string name="nr_telefon">Număr de telefon</string>
+
+    <string name="alege">Alege: </string>
+    <string-array name="lista_tabele">
+        <item>Explorator</item>
+        <item>Parinte</item>
+        <item>Club</item>
+        <item>Conferință</item>
+        <item>Proiect</item>
+        <item>Explorator în proiect</item>
+    </string-array>
+
+    <string name="conferinta">Conferință</string>
+    <string name="conducator">Conducător</string>
+
+    <string name="director">Director</string>
+
+    <string name="proiect">Proiect</string>
+    <string name="data_start">Data start</string>
+    <string name="data_final">Data final</string>
+    <string name="descriere_scurta">Descriere scurtă</string>
+    <string name="adauga_explorator">Adaugă explorator/instructor</string>
+
+    <string name="notificare_lipsa_bd">Crează mai întâi Baza de Date și apoi acceseaz-o.</string>
+    <string name="notificare_lipsa_instructori">Adaugă instructori.</string>
+    <string name="notificare_lipsa_exploratori">Adaugă exploratori.</string>
+    <string name="notificare_lipsa_proiecte">Adaugă proiecte</string>
+    <string name="notificare_CNP_duplicat">CNP-ul acesta a mai fost introdus pentru altă persoană.</string>
+    <string name="notificare_format_numar">Nu ati introdus un numar</string>
+    <string name="notificare_nerespectare_constrangeri">Nu ati respectat constrângerile bazei de date.</string>
+    <string name="notificare_eroare_sqlite">Ati avut o eroare in codul SQLite.</string>
+
+    <string name="explorator">Explorator</string>
+    <string name="nr_ore">Număr de ore petrecut de explorator în proiect</string>
+    <string name="nr_ore_format">7</string>
+    <string name="descriere_scurta_format">Realizarea de proiecte educative</string>
+
+    <string name="detalii">Detalii</string>
+    <string name="am_citit">Am citit</string>
+
+    <string name="titlu_adaug_conferinta">Adaugă/Modifică Conferința</string>
+
+    <!-- CautaActivity.java -->
+    <string name="InstructoriConf">Instructorii din conferința </string>
+    <string name="ExploratoriConf">Exploratorii din conferința </string>
+    <string name="textViewQ3_1">Exploratorii care au participat în proiectul </string>
+    <string name="textViewQ3_2"> un număr de ore mai mare de </string>
+    <string name="textViewQ4_1">Câți din clubul </string>
+    <string name="textViewQ4_2"> au participat la proiectul </string>
+    <string name="textViewQ5">Părinții copiilor care au participat în proiectul </string>
+    <string name="textViewQ6">Primele 2 proiecte dupa numărul de ore petrecute pe săptămână de
+        exploratori in ele.</string>
+    <string name="textViewQ6_1">Primele 2 proiecte dupa numărul de ore petrecute pe săptămână de
+        exploratori in ele.</string>
+    <string name="next">Următoarea Pagină</string>
+
+    <!-- Cauta2Activity.java -->
+    <string name="titluCauta2">Caută</string>
+    <string name="textView2Q1">Numele și prenumele exploratorilor care sunt instructori
+    și pentru care suma orelor petrecute la proiecte este mai mare decât media orelor lucrate
+    de cei din conferința </string>
+    <string name="textView2Q2">Numele primelor 2 cluburi care au mai mulți exploratori decât media națională
+    </string>
+    <string name="textView2Q3_1">Numele proiectelor în care nu s-au implicat exploratorii din
+    </string>
+    <string name="textView2Q3_2"> și în care nu s-au implicat conducători ai cluburilor din
+        conferința </string>
+    <string name="textView2Q3_3"> și care au durat mai mult de </string>
+    <string name="textView2Q3_4"> ore.</string>
+    <string name="textView2Q4_1">Afiseaza conferintele care au numai exploratori care au participat în cel puțin
+        un proiect, cel puțin </string>
+    <string name="textView2Q4_2"> ore.</string>
+
+    <!-- ConferintaAdapter.java -->
+    <string name="efecte_sterge_conferinta">Dacă alegi să ștergi această conferință vei șterge
+    și toate cluburile din ea și exploratorii din acestea. Dacă mai vrei să le păstrezi, întâi
+    selectează pentru fiecare din aceste cluburi o altă conferință și apoi șterge-o pe aceasta.</string>
+</resources>

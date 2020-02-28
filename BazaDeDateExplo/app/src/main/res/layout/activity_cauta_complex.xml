@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityMarginPortrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cauta2Activity">
+
+    <TextView
+        android:id="@+id/textView2Q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView2Q1" />
+
+    <Spinner
+        android:id="@+id/spinner2Q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2Q1" />
+
+    <Button
+        android:id="@+id/button2Q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner2Q1"
+        android:text="@string/cauta" />
+
+    <View
+        android:id="@+id/view1"
+        style="@style/view"
+        android:layout_below="@id/button2Q1" />
+
+    <TextView
+        android:id="@+id/textView2Q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:text="@string/textView2Q2" />
+
+    <Button
+        android:id="@+id/button2Q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2Q2"
+        android:text="@string/cauta" />
+
+    <View
+        android:id="@+id/view2"
+        style="@style/view"
+        android:layout_below="@id/button2Q2" />
+
+    <TextView
+        android:id="@+id/textView2Q3_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:text="@string/textView2Q3_1" />
+
+    <Spinner
+        android:id="@+id/spinner2Q3_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2Q3_1" />
+
+    <TextView
+        android:id="@+id/textView2Q3_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner2Q3_1"
+        android:text="@string/textView2Q3_2" />
+
+    <Spinner
+        android:id="@+id/spinner2Q3_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2Q3_2" />
+
+    <TextView
+        android:id="@+id/textView2Q3_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner2Q3_2"
+        android:text="@string/textView2Q3_3" />
+
+    <EditText
+        android:id="@+id/editText2Q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner2Q3_2"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-10dp"
+        android:layout_toEndOf="@id/textView2Q3_3"
+        android:hint="@string/nr_ore_format"
+        android:textSize="@dimen/editTextViewSize"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/textView2Q3_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner2Q3_2"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="1dp"
+        android:layout_toEndOf="@id/editText2Q3"
+        android:text="@string/textView2Q3_4" />
+
+    <Button
+        android:id="@+id/button2Q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2Q3_3"
+        android:text="@string/cauta" />
+
+    <View
+        android:id="@+id/view3"
+        style="@style/view"
+        android:layout_below="@id/button2Q3" />
+
+    <TextView
+        android:id="@+id/textView2Q4_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view3"
+        android:text="@string/textView2Q4_1" />
+
+    <EditText
+        android:id="@+id/editText2Q4_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2Q4_1"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-10dp"
+        android:hint="@string/nr_ore_format"
+        android:inputType="number"
+        android:textSize="@dimen/editTextViewSize" />
+
+    <TextView
+        android:id="@+id/textView2Q4_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2Q4_1"
+        android:layout_toEndOf="@id/editText2Q4_1"
+        android:text="@string/textView2Q4_2" />
+
+    <Button
+        android:id="@+id/button2Q4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2Q4_2"
+        android:text="@string/cauta" />
+
+</RelativeLayout>

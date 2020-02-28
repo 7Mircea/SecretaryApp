@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityMarginPortrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CautaActivity">
+
+    <TextView
+        android:id="@+id/textViewQ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/InstructoriConf" />
+
+    <Spinner
+        android:id="@+id/spinnerConferinte1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/textViewQ1" />
+
+    <Button
+        android:id="@+id/buttonQ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQ1"
+        android:text="@string/cauta" />
+
+    <View
+        android:id="@+id/view1"
+        style="@style/view"
+        android:layout_below="@id/buttonQ1" />
+
+    <TextView
+        android:id="@+id/textViewQ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:text="@string/ExploratoriConf" />
+
+    <Spinner
+        android:id="@+id/spinnerConferinte2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view1"
+        android:layout_toEndOf="@id/textViewQ2" />
+
+    <Button
+        android:id="@+id/buttonQ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQ2"
+        android:text="@string/cauta" />
+
+    <View
+        android:id="@+id/view2"
+        style="@style/view"
+        android:layout_below="@id/buttonQ2" />
+
+    <TextView
+        android:id="@+id/textViewQ3_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:text="@string/textViewQ3_1" />
+
+    <Spinner
+        android:id="@+id/spinnerQ3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:layout_toEndOf="@id/textViewQ3_1" />
+
+    <TextView
+        android:id="@+id/textViewQ3_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerQ3"
+        android:padding="2dp"
+        android:text="@string/textViewQ3_2"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/editTextQ3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerQ3"
+        android:layout_toEndOf="@id/textViewQ3_2"
+        android:padding="0dp"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textViewQ3_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerQ3"
+        android:layout_toEndOf="@id/editTextQ3"
+        android:padding="2dp"
+        android:text=" ore."
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/buttonQ3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQ3_2"
+        android:text="@string/cauta" />
+
+    <View
+        android:id="@+id/view3"
+        style="@style/view"
+        android:layout_below="@id/buttonQ3" />
+
+    <TextView
+        android:id="@+id/textViewQ4_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view3"
+        android:text="@string/textViewQ4_1"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/spinnerQ4_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view3"
+        android:layout_toEndOf="@id/textViewQ4_1"
+        android:padding="0dp" />
+
+    <TextView
+        android:id="@+id/textViewQ4_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view3"
+        android:layout_toEndOf="@id/spinnerQ4_1"
+        android:text="@string/textViewQ4_2" />
+
+    <Spinner
+        android:id="@+id/spinnerQ4_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQ4_1"
+        android:padding="0dp" />
+
+    <TextView
+        android:id="@+id/textViewQ4_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerQ4_2"
+        android:text="Au participat " />
+
+    <TextView
+        android:id="@+id/textViewQ4_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerQ4_2"
+        android:layout_toEndOf="@id/textViewQ4_3" />
+
+    <Button
+        android:id="@+id/buttonQ4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQ4_3"
+        android:text="@string/cauta" />
+
+    <View
+        android:id="@+id/view4"
+        style="@style/view"
+        android:layout_below="@id/buttonQ4" />
+
+    <TextView
+        android:id="@+id/textViewQ5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view4"
+        android:text="@string/textViewQ5" />
+
+    <Spinner
+        android:id="@+id/spinnerQ5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQ5" />
+
+    <Button
+        android:id="@+id/buttonQ5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerQ5"
+        android:text="@string/cauta" />
+
+    <View
+        android:id="@+id/view5"
+        style="@style/view"
+        android:layout_below="@id/buttonQ5"
+        />
+
+    <TextView
+        android:id="@+id/textViewQ6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view5"
+        android:text="@string/textViewQ6" />
+
+    <Button
+        android:id="@+id/buttonQ6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewQ6"
+        android:text="@string/cauta" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/next" />
+
+</RelativeLayout>

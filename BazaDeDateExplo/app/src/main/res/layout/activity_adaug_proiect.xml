@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityMarginPortrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdaugProiectActivity">
+
+    <TextView
+        android:id="@+id/textViewNume"
+        style="@style/textViewAdauga"
+        android:text="@string/nume" />
+
+    <EditText
+        android:id="@+id/editTextNume"
+        style="@style/editTextAdauga"
+        android:layout_toEndOf="@id/textViewNume"
+        android:layout_toRightOf="@id/textViewNume"
+        android:hint="@string/nume"/>
+
+    <TextView
+        android:id="@+id/textViewDataStart"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/textViewNume"
+        android:text="@string/data_start" />
+
+    <EditText
+        android:id="@+id/editTextDataStart"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/textViewNume"
+        android:layout_toEndOf="@id/textViewDataStart"
+        android:layout_toRightOf="@id/textViewDataStart"
+        android:hint="@string/data_format"/>
+
+    <TextView
+        android:id="@+id/textViewDataFinal"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/textViewDataStart"
+        android:text="@string/data_final" />
+
+    <EditText
+        android:id="@+id/editTextDataFinal"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/textViewDataStart"
+        android:layout_toEndOf="@id/textViewDataFinal"
+        android:layout_toRightOf="@id/textViewDataFinal"
+        android:hint="@string/data_format"/>
+
+    <TextView
+        android:id="@+id/textViewDescriereScurta"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/textViewDataFinal"
+        android:text="@string/descriere_scurta" />
+
+    <EditText
+        android:id="@+id/editTextDescriereScurta"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/textViewDataFinal"
+        android:layout_toEndOf="@id/textViewDescriereScurta"
+        android:layout_toRightOf="@id/textViewDescriereScurta"
+        android:hint="@string/descriere_scurta_format"/>
+
+
+
+    <Button
+        android:id="@+id/buttonAdauga"
+        style="@style/buttonAdaugaActivity"
+        android:layout_alignParentBottom="true"
+        android:text="@string/adauga_modfica" />
+</RelativeLayout>

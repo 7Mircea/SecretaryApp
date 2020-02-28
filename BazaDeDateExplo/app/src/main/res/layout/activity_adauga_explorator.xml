@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityMarginPortrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdaugExploratorActivity">
+
+    <TextView
+        android:id="@+id/textViewNume"
+        style="@style/textViewAdauga"
+        android:layout_alignParentTop="true"
+        android:text="Nume"
+        android:textSize="@dimen/textViewTextSize" />
+
+    <EditText
+        android:id="@+id/editTextNume"
+        style="@style/editTextAdauga"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@id/textViewNume"
+        android:layout_toRightOf="@id/textViewNume"
+        android:hint="@string/nume"
+        android:textSize="@dimen/editTextViewSize" />
+
+    <TextView
+        android:id="@+id/textViewPrenume"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/textViewNume"
+        android:text="@string/prenume" />
+
+    <EditText
+        android:id="@+id/editTextPrenume"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/textViewNume"
+        android:layout_toEndOf="@+id/textViewPrenume"
+        android:layout_toRightOf="@id/textViewPrenume"
+        android:hint="@string/prenume" />
+
+
+    <TextView
+        android:id="@+id/textViewCNP"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/textViewPrenume"
+        android:text="@string/CNP"
+        />
+
+    <EditText
+        android:id="@+id/editTextCNP"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/textViewPrenume"
+        android:layout_toEndOf="@id/textViewCNP"
+        android:layout_toRightOf="@id/textViewCNP"
+        android:hint="@string/CNP_format"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/textViewNrSpecializari"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/textViewCNP"
+        android:text="@string/nr_specializari" />
+
+    <EditText
+        android:id="@+id/editTextNrSpecializari"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/textViewCNP"
+        android:layout_toEndOf="@id/textViewNrSpecializari"
+        android:layout_toRightOf="@id/textViewNrSpecializari"
+        android:hint="@string/nr_specializari_format"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/textViewGrad"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/textViewNrSpecializari"
+        android:text="@string/grad" />
+
+    <EditText
+        android:id="@+id/editTextGrad"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/textViewNrSpecializari"
+        android:layout_toEndOf="@id/textViewGrad"
+        android:layout_toRightOf="@id/textViewGrad"
+        android:hint="@string/grad_format" />
+
+    <TextView
+        android:id="@+id/textViewInstructor"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/textViewGrad"
+        android:text="@string/instructor"
+        />
+
+    <EditText
+        android:id="@+id/editTextInstructor"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/textViewGrad"
+        android:layout_toEndOf="@id/textViewInstructor"
+        android:layout_toRightOf="@id/textViewInstructor"
+        android:hint="@string/instructor_format"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/textViewIDParinte"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/textViewInstructor"
+        android:text="@string/parinte" />
+
+    <ListView
+        android:id="@+id/listViewIDParinte"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/textViewIDParinte" />
+
+    <TextView
+        android:id="@+id/textViewIDClub"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/listViewIDParinte"
+        android:text="@string/club"
+        />
+
+    <ListView
+        android:id="@+id/listViewIDClub"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/textViewIDClub" />
+
+    <TextView
+        android:id="@+id/textViewDataStart"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/listViewIDClub"
+        android:text="@string/data_start" />
+
+    <EditText
+        android:id="@+id/editTextDataStart"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/listViewIDClub"
+        android:layout_toEndOf="@id/textViewDataStart"
+        android:layout_toRightOf="@id/textViewDataStart"
+        android:hint="@string/data_format"
+        android:inputType="date"/>
+
+    <TextView
+        android:id="@+id/textViewDataFinal"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/textViewDataStart"
+        android:text="@string/data_final" />
+
+    <EditText
+        android:id="@+id/editTextDataFinal"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/textViewDataStart"
+        android:layout_toEndOf="@id/textViewDataFinal"
+        android:layout_toRightOf="@id/textViewDataFinal"
+        android:hint="@string/data_format"
+        android:inputType="date"/>
+
+
+    <Button
+        android:id="@+id/buttonAdauga"
+        style="@style/buttonAdaugaActivity"
+        android:layout_alignParentBottom="true"
+        android:text="@string/adauga_modfica" />
+</RelativeLayout>

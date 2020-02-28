@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdaugClubActivity"
+    style="@style/ActivityMarginPortrait">
+
+    <TextView
+        android:id="@+id/textViewNume"
+        style="@style/textViewAdauga"
+        android:text="@string/nume" />
+
+    <EditText
+        android:id="@+id/editTextNume"
+        style="@style/editTextAdauga"
+        android:layout_toEndOf="@id/textViewNume"
+        android:layout_toRightOf="@id/textViewNume" />
+
+    <TextView
+        android:id="@+id/textViewConferinta"
+        style="@style/textViewAdauga"
+        android:text="@string/conferinta"
+        android:layout_below="@id/textViewNume"/>
+
+    <ListView
+        android:id="@+id/listViewConferinte"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/textViewConferinta"/>
+
+
+
+    <TextView
+        android:id="@+id/textViewConducator"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/listViewConferinte"
+        android:text="@string/conducator"
+        />
+
+    <ListView
+        android:id="@+id/listViewConducatori"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/textViewConducator"/>
+
+    <Button
+        android:id="@+id/buttonAdauga"
+        style="@style/buttonAdaugaActivity"
+        android:layout_alignParentBottom="true"
+        android:text="@string/adauga_modfica"/>
+
+
+</RelativeLayout>

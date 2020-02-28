@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activityMargins">8dp</dimen>
+    <dimen name="textViewTextSize">25sp</dimen>
+    <dimen name="editTextViewSize">14sp</dimen>
+</resources>

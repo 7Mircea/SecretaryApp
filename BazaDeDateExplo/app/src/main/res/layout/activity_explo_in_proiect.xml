@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdaugExploInProiectActivity"
+    style="@style/ActivityMarginPortrait">
+
+    <TextView
+        android:id="@+id/textViewIDProiect"
+        style="@style/textViewAdauga"
+        android:text="@string/proiect" />
+
+    <ListView
+        android:id="@+id/listViewProiecte"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/textViewIDProiect" />
+
+    <TextView
+        android:id="@+id/textViewIDExplorator"
+        style="@style/textViewAdauga"
+        android:text="@string/explorator"
+        android:layout_below="@id/listViewProiecte"/>
+
+    <ListView
+        android:id="@+id/listViewExploratori"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/textViewIDExplorator" />
+
+    <TextView
+        android:id="@+id/textViewNrOre"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/listViewExploratori"
+        android:text="@string/nr_ore" />
+
+    <EditText
+        android:id="@+id/editTextNrOre"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/textViewNrOre"
+        android:hint="@string/nr_ore_format"/>
+
+    <Button
+        android:id="@+id/buttonAdauga"
+        style="@style/buttonAdaugaActivity"
+        android:layout_alignParentBottom="true"
+        android:text="@string/adauga_modfica" />
+
+</RelativeLayout>

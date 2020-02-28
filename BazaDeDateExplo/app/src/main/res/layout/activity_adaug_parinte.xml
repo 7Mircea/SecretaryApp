@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ActivityMarginPortrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdaugParinteActivity">
+
+    <TextView
+        android:id="@+id/ParinteTextViewNume"
+        style="@style/textViewAdauga"
+        android:text="@string/nume" />
+
+    <EditText
+        android:id="@+id/ParinteEditTextNume"
+        style="@style/editTextAdauga"
+        android:layout_toEndOf="@id/ParinteTextViewNume"
+        android:layout_toRightOf="@id/ParinteTextViewNume" />
+
+    <TextView
+        android:id="@+id/ParinteTextViewPrenume"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/ParinteTextViewNume"
+        android:text="@string/prenume" />
+
+    <EditText
+        android:id="@+id/ParinteEditTextPrenume"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/ParinteTextViewNume"
+        android:layout_toEndOf="@id/ParinteTextViewPrenume"
+        android:layout_toRightOf="@id/ParinteTextViewPrenume" />
+
+    <TextView
+        android:id="@+id/ParinteTextViewGen"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/ParinteTextViewPrenume"
+        android:text="@string/gen" />
+
+    <EditText
+        android:id="@+id/ParinteEditTextGen"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/ParinteTextViewPrenume"
+        android:layout_toRightOf="@id/ParinteTextViewGen"
+        android:layout_toEndOf="@id/ParinteTextViewGen"/>
+
+    <TextView
+        android:id="@+id/ParinteTextViewNrTelefon"
+        style="@style/textViewAdauga"
+        android:layout_below="@id/ParinteTextViewGen"
+        android:text="@string/nr_telefon"/>
+
+    <EditText
+        android:id="@+id/ParinteEditTextNrTelefon"
+        style="@style/editTextAdauga"
+        android:layout_below="@id/ParinteTextViewNrTelefon"/>
+    <Button
+        android:id="@+id/ParinteButtonAdauga"
+        style="@style/buttonAdaugaActivity"
+        android:layout_alignParentBottom="true"
+        android:text="@string/adauga_modfica"
+        />
+</RelativeLayout>
