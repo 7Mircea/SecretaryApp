@@ -6,7 +6,7 @@ Aplicatie cu baze de date relationale avand interfata vizuala. Această aplicaț
 Lista funcționalităților și componentelor: Salvarea informațiilor despre exploratori(participanții care sunt în clasa a V-a până în clasa a VII-a), a părinților acestora(exploratorii fiind minori este nevoie de acordul părinților pentru participarea la activitățile asociației), a proiectelor asociației și a structurii organizatorice a acesteia la nivel național. De asemenea informațiile pot ulterior modificate și se pot face prelucrări în vederea cuantificării performanțelor exploratorilor, a unităților organizatorice(cluburile și conferințele) precum și gradul de succes al proiectelor pe baza numărului de participanți și a numărului de ore petrecute voluntari în acestea.
 Organizarea asociației este de formă piramidală. Mai mulți exploratori formează un club(acesta reprezentând forma de organizare la nivelul orașului), mai multe cluburi formează o conferință(fiind forma de organizare la nivelul unei zone). O conferință reprezintă toate cluburile dintr-o zonă geografică(ex: Muntenia, Oltenia, etc.). Exemple de cluburi: Ezra, Neemia, etc.
 ## Tabele
-**Exploratori**
+**Exploratori**<br/>
 IDExplorator	Nume	Prenume	CNP	    NrSpecializari	Grad	Instructor	IDParinte	IDClub
 Integer	        Text	Text	Text	Integer	        Text	Integer	    Integer	    Integer
 
