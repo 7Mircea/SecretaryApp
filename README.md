@@ -7,32 +7,52 @@ Lista funcționalităților și componentelor: Salvarea informațiilor despre ex
 Organizarea asociației este de formă piramidală. Mai mulți exploratori formează un club(acesta reprezentând forma de organizare la nivelul orașului), mai multe cluburi formează o conferință(fiind forma de organizare la nivelul unei zone). O conferință reprezintă toate cluburile dintr-o zonă geografică(ex: Muntenia, Oltenia, etc.). Exemple de cluburi: Ezra, Neemia, etc.
 ## Tabele
 **Exploratori**<br/>
-IDExplorator	Nume	Prenume	CNP	    NrSpecializari	Grad	Instructor	IDParinte	IDClub<br/>
-Integer	        Text	Text	Text	Integer	        Text	Integer	    Integer	    Integer<br/>
 
-DataStart	DataFinal<br/>
-Text	    Text<br/>
-*
+|IDExplorator|	Nume|	Prenume|	CNP |	NrSpecializari|	Grad  |	Instructor|	IDParinte|	IDClub|
+|------------|------|----------|--------|-----------------|-------|-----------|----------|--------|
+|Integer	 |  Text|	   Text|	Text|	       Integer|   Text|	   Integer|   Integer| Integer|
+<br/>
+
+|DataStart|	DataFinal|
+|---------|----------|
+|     Text|	     Text|
+<br/>
+
 **Parinti**<br/>
-IDParinte	Nume	Prenume	Gen	    NrDeTelefon<br/>
-Integer  	Text	Text	Text	Text<br/>
+
+|IDParinte|Nume	|Prenume|Gen	    |NrDeTelefon|
+|---------|-----|-------|-----------|-----------|
+|Integer  |Text	|Text	|Text	    |Text       |
+<br/>
 
 **Proiecte**<br/>
-IDProiect	Nume	DataStart	DataFinal	DescriereScurtă<br/>
-Integer	    Text	Text	    Text	    Text<br/>
+
+|IDProiect	|Nume	|DataStart	|DataFinal	|DescriereScurtă|
+|-----------|-------|-----------|-----------|---------------|
+|Integer	|Text	|Text	    |Text	    |Text           |
+<br/>
 
 **Cluburi**<br/>
-IDClub	Nume	IDConferință	IDConducător<br/>
-Integer	Text	Integer	        Integer<br/>
+
+|IDClub	|Nume	|IDConferință	|IDConducător|
+|-------|-------|---------------|------------|
+|Integer|Text	|Integer	    |Integer     |
+<br/>
 
 **Conferințe**<br/>
-IDConferință	Nume	IDDirector<br/>
-Integer	        Text	Integer<br/>
+
+|IDConferință	|Nume	|IDDirector|
+|---------------|-------|----------|
+|Integer	    |Text	|Integer   |
+<br/>
 
 Tabel de legătură:<br/>
 **ExploratoriInProiecte**<br/>
-ID	    IDProiect	IDExplorator	NrOre<br/>
-Integer	Integer	    Integer	        Integer<br/>
+
+|ID	        |IDProiect	    |IDExplorator	    |NrOre  |
+|-----------|---------------|-------------------|-------|
+|Integer	|Integer	    |Integer	        |Integer|
+<br/>
 	
 ## Relații
 Conferințe – Are(1:N) – Cluburi.\c\n<br/>
@@ -106,7 +126,7 @@ Aceasta este o pagină de introducere informații despre explorator.<br/>
 Pagina cu interogări simple este ușor de utilizat, alegerea parametrilor pentru interogării putând fi făcută numai cu valori deja existente în baza de date.<br/>
 ## Interogări Simple
 Interogările pot fi găsite în Cautator.java numele tabelelor fiind date sub forma de constante pentru a putea facilita o modificare ușoară a numelor ulterior.<br/>
-## #Interogarea 1
+### Interogarea 1
 SELECT E.Nume, E.Prenume, E.IDExplorator FROM Exploratori E INNER JOIN Cluburi C ON E.IDClub == C.IDClub INNER JOIN Conferinte Co ON Co.IDConferinta == C.IDConferinta WHERE Co.Nume=’%s’ AND E.Instructor=1;<br/>
 În loc de %s se află numele Conferinței selectat de utilizator. Ex de valori: Muntenia, Moldova.<br/>
 ### Interogarea 2
@@ -153,7 +173,7 @@ GROUP BY CF1.Nume<br/>
 HAVING E1.IDExplorator IN (SELECT E2.IDExplorator FROM Exploratori E2 INNER JOIN ExploratoriInProiecte EP2 ON E2.IDExplorator = EP2.IDExplorator))<br/>
 
 
-###Bibliography
+### Bibliography
 SQLite Primary Key. (2019). Preluat de pe SQLiteTutorial: https://www.sqlitetutorial.net/sqlite-primary-key/
 
 
